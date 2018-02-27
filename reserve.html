@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hot Restaurant - Home</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body data-pinterest-extension-installed="cr1.39.1">
@@ -72,7 +74,7 @@
 
 	</div>
 </body>
-</html>
+
 
 <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
 <script type="text/javascript">
@@ -96,7 +98,8 @@
 		// Here we get the location of the root page.
 		// We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
 		var currentURL = window.location.origin;
-	    $.post(currentURL + "/api/new", newReservation,
+		console.log(currentURL)
+	    $.post(currentURL + "/api/:new", newReservation,
 	    function(data){
     	// Callback receives "true" or "false" from api-routes, if table is available or not
 	    	// If a table is available... tell user they are booked.
@@ -116,3 +119,5 @@
 return false;
 });
 </script>
+
+</html>
