@@ -101,8 +101,8 @@
 		var currentURL = window.location.origin;
 		// console.log(currentURL)
 	    $.post(currentURL + "/api/:new", newReservation,
-	    function(data, res){
-			console.log(res)
+	    function(data){
+			// console.log(res)
 			// console.log(data);
     	// Callback receives "true" or "false" from api-routes, if table is available or not
 	    	// If a table is available... tell user they are booked.
