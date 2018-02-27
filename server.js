@@ -115,10 +115,10 @@ app.get("/api/waitlist", function(req, res) {
   
     if (reservations.length < 5) {
       reservations.push(newReso);
-      res.send("Yay! You are officially booked!")
+      res.status(200).send("Yay! You are officially booked!")
     } else {
       waitList.push(newReso);
-      res.send("Sorry! You're on the waitlist.")
+      res.status(200).send("Sorry! You're on the waitlist.")
     }
   
     res.json(newReso);
