@@ -108,10 +108,10 @@
 	// console.log(data);
     	// Callback receives "true" or "false" from api-routes, if table is available or not
 	    	// If a table is available... tell user they are booked.
-	    	if(data){
-	    		alert("Yay! You are officially booked!")
-	    	} else if (!data) {
-				alert("Sorry you are on the wait list")
+	    	if(data.reserved){
+	    		alert("Yay! You are officially booked!", data.message)
+	    	} else if (!data.reserved) {
+				alert("Sorry you are on the wait list", data.message)
 			}
 	    	// // If a table is not available... tell user they on the waiting list.
 

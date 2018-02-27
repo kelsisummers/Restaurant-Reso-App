@@ -112,14 +112,20 @@ app.get("/api/waitlist", function(req, res) {
     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   
     console.log('this is our res or waitlist', newReso);
-  
+    const blob = {
+      reserved: false,
+      message: ""
+    }
     if (reservations.length < 5) {
       reservations.push(newReso);
+      blob.reserved = true;
+      blob.message = " Hoorah"
     } else {
       waitList.push(newReso);
+      blob.message = "booo"
     }
   
-    res.json(newReso);
+    res.json(blob);
 
 
 
