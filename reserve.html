@@ -6,6 +6,7 @@
 	<title>Hot Restaurant - Home</title>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body data-pinterest-extension-installed="cr1.39.1">
@@ -98,7 +99,7 @@
 		// Here we get the location of the root page.
 		// We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
 		var currentURL = window.location.origin;
-		console.log(currentURL)
+		// console.log(currentURL)
 	    $.post(currentURL + "/api/:new", newReservation,
 	    function(data){
 			// console.log(data);
@@ -117,7 +118,7 @@
 			$('#reserve_email').val("");
 			$('#reserve_uniqueID').val("");
 	    });
-return false;
+// return false;
 });
 </script>
 
