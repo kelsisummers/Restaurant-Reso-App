@@ -101,16 +101,16 @@
 		console.log(currentURL)
 	    $.post(currentURL + "/api/:new", newReservation,
 	    function(data){
-			console.log(data);
+			// console.log(data);
     	// Callback receives "true" or "false" from api-routes, if table is available or not
 	    	// If a table is available... tell user they are booked.
-	    	if(data === true){
-	    		alert("Yay! You are officially booked!")
-	    	}
-	    	// If a table is not available... tell user they on the waiting list.
-	    	if(data === false){
-	    		alert("Sorry you are on the wait list")
-	    	}
+	    	// if(data === true){
+	    	// 	alert("Yay! You are officially booked!")
+	    	// }
+	    	// // If a table is not available... tell user they on the waiting list.
+	    	// if(data === false){
+	    	// 	alert("Sorry you are on the wait list")
+	    	// }
 	    	// Clear the form when submitting
     		$('#reserve_name').val("");
 			$('#reserve_phone').val("");
