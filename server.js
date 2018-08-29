@@ -20,45 +20,45 @@ app.use('/public/assets', express.static(__dirname + '/app/public/assets/images'
 // DATA
 // =============================================================
 var reservations = [
-  {
-    customerName: "Bilbo Baggins",
-    phoneNumber: "(555) 555-5555",
-    customerEmail: "thering@theshire.com",
-    customerID: "Bilbo"
-  },
-  {
-    customerName: "Sansa Stark",
-    phoneNumber: "(555) 555-5556",
-    customerEmail: "sansa@thelonewolf.com",
-    customerID: "Sansa"
-  },
-  {
-    customerName: "Tom Riddle",
-    phoneNumber: "(555) 555-5558",
-    customerEmail: "dumbledoresux@heirofslytherin.com",
-    customerID: "Voldemort"
-  },
-  {
-    customerName: "Katniss Everdeen",
-    phoneNumber: "(555) 555-5559",
-    customerEmail: "iluvpeeta@district12.com",
-    customerID: "Katniss"
-  },
+  // {
+  //   customerName: "Bilbo Baggins",
+  //   phoneNumber: "(555) 555-5555",
+  //   customerEmail: "thering@theshire.com",
+  //   customerID: "Bilbo"
+  // },
+  // {
+  //   customerName: "Sansa Stark",
+  //   phoneNumber: "(555) 555-5556",
+  //   customerEmail: "sansa@thelonewolf.com",
+  //   customerID: "Sansa"
+  // },
+  // {
+  //   customerName: "Tom Riddle",
+  //   phoneNumber: "(555) 555-5558",
+  //   customerEmail: "dumbledoresux@heirofslytherin.com",
+  //   customerID: "Voldemort"
+  // },
+  // {
+  //   customerName: "Katniss Everdeen",
+  //   phoneNumber: "(555) 555-5559",
+  //   customerEmail: "iluvpeeta@district12.com",
+  //   customerID: "Katniss"
+  // },
 ];
 
 var waitList = [
-  {
-    customerName: "Angelica Pickles",
-    phoneNumber: "(555) 555-5565",
-    customerEmail: "longlivecynthia@therugrats.com",
-    customerID: "Angelica"
-  },
-  {
-    customerName: "Raven Baxter",
-    phoneNumber: "(555) 555-5656",
-    customerEmail: "supernaturaldiva@thefuture.com",
-    customerID: "Raven"
-  }
+  // {
+  //   customerName: "Angelica Pickles",
+  //   phoneNumber: "(555) 555-5565",
+  //   customerEmail: "longlivecynthia@therugrats.com",
+  //   customerID: "Angelica"
+  // },
+  // {
+  //   customerName: "Raven Baxter",
+  //   phoneNumber: "(555) 555-5656",
+  //   customerEmail: "supernaturaldiva@thefuture.com",
+  //   customerID: "Raven"
+  // }
 ];
 
 // Routes

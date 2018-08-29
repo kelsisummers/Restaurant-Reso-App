@@ -45,7 +45,10 @@
 		<!-- Footer Links -->
 		<footer class="footer">
 	    <div class="container">
-	      <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+	      <p>
+					<!-- <a href="#" id="clear">Clear Table</a> |  -->
+					<a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
+				</p>
 	    </div>
 	  </footer>
 	</div>
@@ -126,16 +129,16 @@
 			});
 	}
 	// This function resets all of the data in our tables. This is intended to let you restart a demo.
-	function clearTable(){
-		var currentURL = window.location.origin;
-		$.ajax({url: currentURL + "/api/clear", method: "POST"})
-	}
-	$("#clear").on('click', function(){
-		alert("Clearing...");
-		clearTable();
+	// function clearTable(){
+		// var currentURL = window.location.origin;
+		// $.ajax({url: currentURL + "/api/clear", method: "POST"})
+	// }
+	// $("#clear").on('click', function(){
+		// alert("Clearing...");
+		// clearTable();
 		// Refresh the page after data is cleared
-		location.reload();
-	})
+		// location.reload();
+	// })
 	// Run Queries!
 	// ==========================================
 	runTableQuery();
