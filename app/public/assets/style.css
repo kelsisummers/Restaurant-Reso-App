@@ -139,4 +139,6 @@ h4, label, h1, .nav, .text-center, .btn, .footer, h2 {
   background: rgba(0,0,0, .6);
   height: fit-content;
   min-height: 500px;
+  text-align: center;
+  flex-wrap: wrap;
 }
