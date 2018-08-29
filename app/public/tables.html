@@ -88,8 +88,11 @@
 					$('#tableSection').append(tableSection);
 					var tableNumber = i + 1;
 					// Then display the remaining fields in the HTML (Section Name, Date, URL)
-					tableData[i].customerID !== undefined ? 
-					($("#tableWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + tableData[i].customerID + "</h2>")) : null;
+					// tableData[i].customerID !== undefined || '' ? 
+					// (
+					$("#tableWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + tableData[i].customerID + "</h2>");
+				// )
+					//  : null;
 				}
 			});
 	}
@@ -115,8 +118,10 @@
 					$('#waitlistSection').append(waitlistSection);
 					var tableNumber = i + 1;
 					// Then display the remaining fields in the HTML (Section Name, Date, URL)
-					waitlistData[i].customerID !== undefined ? 
-					($("#waitlistWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + waitlistData[i].customerID + "</h2>")) : null;
+					// waitlistData[i].customerID !== undefined || '' ? 
+					// (
+						$("#waitlistWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + waitlistData[i].customerID + "</h2>");
+					// ) : null;
 				}
 			});
 	}
