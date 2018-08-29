@@ -13,6 +13,9 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Route That Sends The User First To The Homepage
+app.use(express.static(path.join(__dirname, 'public')));
+
 // DATA
 // =============================================================
 var reservations = [
