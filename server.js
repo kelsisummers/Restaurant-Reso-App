@@ -13,8 +13,9 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Route That Sends The User First To The Homepage
-app.use(express.static(path.join(__dirname, 'public')));
+// Links Up Express App to CSS Files
+app.use('/public/assets', express.static(__dirname + '/app/public/assets'));
+app.use('/public/assets', express.static(__dirname + '/app/public/assets/images'));
 
 // DATA
 // =============================================================
@@ -65,15 +66,15 @@ var waitList = [
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "home.html"));
+  res.sendFile(path.join(__dirname, "/app/public/home.html"));
 });
 
 app.get("/tables", function(req, res) {
-  res.sendFile(path.join(__dirname, "tables.html"));
+  res.sendFile(path.join(__dirname, "/app/public/tables.html"));
 });
 
 app.get("/reserve", function(req, res) {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "/app/public/reserve.html"));
 });
 
 // Get all characters
