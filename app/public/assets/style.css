@@ -142,3 +142,9 @@ h4, label, h1, .nav, .text-center, .btn, .footer, h2 {
   text-align: center;
   flex-wrap: wrap;
 }
+
+#tableSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
