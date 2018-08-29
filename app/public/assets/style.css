@@ -84,10 +84,16 @@ a:hover {
   border: none;
   border-bottom: 2px solid #ced4da;
   border-radius: 10px;
-  background-color: transparent
+  background-color: transparent;
+  color: #fff;
 }
 
-h4, label, h1, .nav, .text-center, .btn, .footer {
+.form-control:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+h4, label, h1, .nav, .text-center, .btn, .footer, h2 {
   font-weight: 100
 }
 
