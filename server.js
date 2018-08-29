@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Star Wars Characters (DATA)
+// DATA
 // =============================================================
 var reservations = [
   {
@@ -82,74 +82,27 @@ app.get("/api/waitlist", function(req, res) {
   res.json(waitList);
 });
 
-
-
-  // app.post("/api/new", function(req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body-parser middleware
-  //   var newReso = req.body;
-  //   // const params = req.params.new;
-
-  //   // Using a RegEx Pattern to remove spaces from newCharacter
-  //   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+app.post("/api/:new", function(req, res) {
+  // req.body hosts is equal to the JSON post sent from the user
+  // This works because of our body-parser middleware
+  var newReso = req.body;
+  // Using a RegEx Pattern to remove spaces from newCharacter
+  // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   
-  //   console.log('this is our res or waitlist', newReso);
-  //   if (reservations.length < 5) {
-  //     reservations.push(newReso);
-  //   } else {
-  //     waitList.push(newReso);
-  //   }
-  
-  //   res.json(newReso);
+  console.log('this is our res or waitlist', newReso);
 
-
-  // });
-  app.post("/api/:new", function(req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body-parser middleware
-    var newReso = req.body;
-    // Using a RegEx Pattern to remove spaces from newCharacter
-    // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  
-    console.log('this is our res or waitlist', newReso);
-
-    if (reservations.length < 5) {
-      reservations.push(newReso);
-      res.json({
-        reserved: true
-      });
-    } else {
-      waitList.push(newReso);
-      res.json({
-        reserved: false
-      })
-    }
-  
-    
-
-
-
-  });
-
-  // Create New Characters - takes in JSON input
-// app.post("/api/waitlist/:new", function(req, res) {
-//   // req.body hosts is equal to the JSON post sent from the user
-//   // This works because of our body-parser middleware
-//   var newWaitlist = req.body;
-//   // Using a RegEx Pattern to remove spaces from newCharacter
-//   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-
-//   console.log(newWaitlist);
-
-//   waitList.push(newWaitlist);
-
-//   res.json(newWaitlist);
-// });
-
-
-
-
-
+  if (reservations.length < 5) {
+    reservations.push(newReso);
+    res.json({
+      reserved: true
+    });
+  } else {
+    waitList.push(newReso);
+    res.json({
+      reserved: false
+    })
+  }
+});
 
 // Starts the server to begin listening
 // =============================================================
