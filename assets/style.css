@@ -31,18 +31,14 @@
   left: 0;
   z-index: 100;
   background: transparent;
+  align-items: center;
 }
 
 .text-center {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-weight: 100;
   letter-spacing: 1px;
-}
-
-h1 {
-  font-weight: 100;
 }
 
 .btn {
@@ -50,7 +46,6 @@ h1 {
   background: transparent;
   color: #fff;
   border-radius: 6px 0;
-  font-weight: 100;
   text-transform: uppercase;
   letter-spacing: .5px;
 }
@@ -68,4 +63,52 @@ a {
 
 .nav-link {
   color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.form-wrapper {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  top: 100px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  padding: 50px;
+  background: rgba(0,0,0, .6);
+  height: fit-content;
+}
+
+.row {
+  width: 40%;
+  min-width: 310px;
+}
+
+.panel-heading {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+h4, label, h1, .nav, .text-center, .btn, .footer {
+  font-weight: 100
+}
+
+.submit{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 10px;
+  background-color: transparent
 }

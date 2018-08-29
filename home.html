@@ -12,42 +12,36 @@
 
 </head>
 <body data-pinterest-extension-installed="cr1.39.1">
-		<div class="grid">
-
-	<!-- Cover Image -->
-	<div id="cover">
-		<nav class="nav">
-			<a class="nav-link active" href="#"><h1>eaTable</h1></a>
-		</nav>
-		<img class="responsive-img" src="assets/cover-img.png">
-		<div class="jumbotron">
-				<!-- <h1 class="text-center">eaTable</h1> -->
-				<!-- <hr> -->
-				<h2 class="text-center">Only have 5 tables available! Make your reservation now!</h2>
+	<!-- Grid -->
+	<div class="grid">
+		<div id="cover">
+			<!-- Navbar -->
+			<nav class="nav">
+				<a class="nav-link active" href="#"><h1>eaTable</h1></a>
+			</nav>
+			<!-- Cover Image -->
+			<img class="responsive-img" src="assets/cover-img.png">
+			<!-- Text -->
+			<div class="jumbotron cover-text">
+				<h2 class="text-center">Only 5 tables available. Make your reservation now.</h2>
 				<br>
-	
-				<div class="text-center">
-					<a href="/tables"><button type="button" class="btn"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
-					<a href="/reserve"><button type="button" class="btn"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
+				<!-- Buttons -->
+				<div class="text-center button-wrapper">
+					<a href="/tables"><button type="button" class="btn button"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
+					<a href="/reserve"><button type="button" class="btn button"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
 				</div>
-	
 			</div>
+		</div>
+		<!-- Footer Links -->
+		<footer class="footer">
+			<div class="container">
+				<p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+			</div>
+		</footer>
 	</div>
-
-
-
-
-
-    <footer class="footer">
-      <div class="container">
-	        <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
-      </div>
-    </footer>
-
-	</div>
+</body>
 <!-- Bootstrap Javascript -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
 </html>
